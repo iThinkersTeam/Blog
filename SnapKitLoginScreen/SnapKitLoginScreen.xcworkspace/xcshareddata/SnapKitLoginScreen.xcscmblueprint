@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BF4629AEC08D715906B305D9E70976F1812C2EB5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "BF4629AEC08D715906B305D9E70976F1812C2EB5" : 9223372036854775807,
+    "4FE836814E907D139D52FA8219E7F1218B60E36F" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5E9F9A6C-09FE-45CE-A2AC-1CEF0C754DAF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "BF4629AEC08D715906B305D9E70976F1812C2EB5" : "Blog\/",
+    "4FE836814E907D139D52FA8219E7F1218B60E36F" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SnapKitLoginScreen",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SnapKitLoginScreen\/SnapKitLoginScreen.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/iThinkersTeam\/iThinkersTeam.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4FE836814E907D139D52FA8219E7F1218B60E36F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/iThinkersTeam\/Blog.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BF4629AEC08D715906B305D9E70976F1812C2EB5"
+    }
+  ]
+}
