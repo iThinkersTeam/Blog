@@ -20,7 +20,6 @@ protocol Countable {
     init?(rawValue: Int)
 }
 
-// MARK: - Implementation
 public extension Reusable {
     static var reuseIdentifier: String {
         return String(describing: self)

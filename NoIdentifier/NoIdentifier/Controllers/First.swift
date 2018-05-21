@@ -20,24 +20,39 @@ class First: UIViewController {
         super.viewDidLoad()
         let rightButtons = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(goNextScreen))
         self.navigationItem.rightBarButtonItem = rightButtons
+        let leftButtons = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(goNextScreen))
+        self.navigationItem.leftBarButtonItem = leftButtons
     }
     
     func goNextScreen() {
-        if let second = Second.storyboardInstance() {
-            self.navigationController?.pushViewController(second, animated: true)
+        if let vc = Second.storyboardInstance() {
+            self.present(vc, animated: true, completion: nil)
         }
+        
+//        let storyboard = UIStoryboard(name: "Second", bundle: nil)
+//        if let vc = storyboard.instantiateViewController(withIdentifier: "Second") as? Second {
+//            self.navigationController?.pushViewController(vc, animated: true)
+//        }
+        
+        let storyboard = UIStoryboard(name: "Second", bundle: nil)
+        if let vc = storyboard.instantiateViewController(withIdentifier: "Second") as? Second {
+            self.present(vc, animated: true, completion: nil)
+        }
+        
     }
 }
 
+
+//MARK: - TableViewDataSource
 extension First: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return titles.count
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: MainCell = tableView.dequeueReusableCell(for: indexPath)
-        cell.title.text = titles[indexPath.row]
-     
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "Test") as? MainCell else {
+            return UITableViewCell() }
+        
         return cell
     }
 }
